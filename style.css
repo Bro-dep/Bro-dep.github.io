@@ -133,6 +133,7 @@ main {
 }
 
 .aboutMePic{
+  padding: 25px;
   float: left; 
   width:30%; 
   height: auto;
@@ -142,6 +143,7 @@ main {
 }
 
 .aboutMeDec{
+  padding: 25px;
   float: left; 
   width:70%; 
   height: auto;
