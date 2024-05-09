@@ -149,9 +149,19 @@ main {
 .aboutMeDec{
   padding: 25px;
   float: left; 
-  width:70%; 
+  width:60%; 
   height: auto;
   background-color: beige;
+  border: #000000;
+  border-radius: 1px;
+}
+
+.aboutMeLink{
+  padding: 25px;
+  float: right; 
+  width:10%; 
+  height: auto;
+  background-color: rgb(183, 55, 200);
   border: #000000;
   border-radius: 1px;
 }
