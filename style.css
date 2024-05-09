@@ -16,7 +16,7 @@ a {
 }
 
 main {
-  min-height: 100vh;
+  
   padding: 4rem 2rem;
   flex: 1;
   display: flex;
@@ -130,5 +130,22 @@ main {
 .headerStyle {
   background-color: beige;
   border-color: #000000;
-  
+}
+
+.aboutMePic{
+  float: left; 
+  width:30%; 
+  height: auto;
+  background-color: aqua;
+  border: #000000;
+  border-radius: 1px;
+}
+
+.aboutMeDec{
+  float: left; 
+  width:70%; 
+  height: auto;
+  background-color: beige;
+  border: #000000;
+  border-radius: 1px;
 }
