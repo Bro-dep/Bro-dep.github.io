@@ -33,6 +33,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 /*#endregion*/
 
 /*#region Header*/
@@ -135,12 +141,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
-}
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 .center{
   display: block; 
