@@ -1,1 +1,2 @@
 Currently working on remaking the website to be updated to current skills along with redesigning the websites look/layout.
+Beginning to work on the projects page/dynamic array of projects.
