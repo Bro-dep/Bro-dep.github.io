@@ -25,7 +25,7 @@ body {
   box-sizing: border-box;
 }
 main {
-  
+  color: var(--color5);
   padding: 4rem 2rem;
   flex: 1;
   display: flex;
@@ -148,6 +148,15 @@ a {
   margin-right: auto; 
   width: 70%;
 }
+/*#endregion*/
+
+/*#region MainPage*/
+.MainPageDescription{
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+
 /*#endregion*/
 
 /*#region About Me*/
