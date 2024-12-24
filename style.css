@@ -1,20 +1,16 @@
+/* Made by Luna Chavez */
+/*#region Main*/
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #7209b7;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
-
 main {
   
   padding: 4rem 2rem;
@@ -24,37 +20,103 @@ main {
   justify-content: center;
   align-items: center;
 }
+/*#endregion*/
 
+/*#region Header*/
+.headerStyle {
+  background-color: #3a0ca3;
+  border-color: #4cc9f0;
+}
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: #4cc9f0;
 }
-
 .title,
 .description {
   text-align: center;
 }
-
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
-
 .descriptionSmall{
   font-size: 1rem;
 }
+/*#endregion*/
 
+/*#region Cards*/
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #4cc9f0;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.cardNon{
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #4cc9f0;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 800px;
+}
+.cardNav {
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  color: #4cc9f0;
+  text-decoration: none;
+  border: 1px solid #4cc9f0;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+}
+.cardNav:hover,
+.cardNav:focus,
+.cardNav:active{
+  color: #0070f3;
+  border-color: #0070f3;
+}
+/*#endregion*/
+
+/*#region Containers*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .code {
-  background: #fafafa;
+  background: #a5a0a0;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
 .grid {
   display: flex;
   align-items: center;
@@ -62,80 +124,21 @@ main {
   flex-wrap: wrap;
   max-width: 1200px;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 500px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
-
-.cardNon{
-  margin: 1rem;
-  padding: 0.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 800px;
+.center{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 70%;
 }
+/*#endregion*/
 
-.cardNav {
-  margin: 1rem;
-  padding: 0.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 500px;
-}
-
-.cardNav:hover,
-.cardNav:focus,
-.cardNav:active{
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.headerStyle {
-  background-color: beige;
-  border-color: #000000;
-}
-
+/*#region About Me*/
 .aboutMePic{
   float: left; 
   width:30%; 
@@ -169,10 +172,4 @@ main {
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 800px;
 }
-
-.center{
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 70%;
-}
+/*#endregion*/
