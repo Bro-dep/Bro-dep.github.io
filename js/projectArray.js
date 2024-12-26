@@ -6,12 +6,21 @@ const exampleArrayTest = { firstName: "Billy", lastName: "Bob", age: 100 };
 const exampleArrayTest2 = { firstName: "Jole", lastName: "ase", age: 23 };
 const exampleArrayTest3 = { firstName: "Sik", lastName: "aserv", age: 54 };
 
+//#region Projects
+const game1 = {
+    Name:"",
+    Link:"",
+    Img:"",
+    Dec:"",
+}
+//#endregion
+
 var sampleArray = [exampleArrayTest, exampleArrayTest2, exampleArrayTest3];
 
-function arrayTest() {
+function ProjectArray() {
   //prints a amount of stuff based on a array
   var amount = sampleArray.length;
-  const container = document.getElementById("testContainer");
+  const container = document.getElementById("ProjectCont");
 
   container.innerHTML = `
         <div>
