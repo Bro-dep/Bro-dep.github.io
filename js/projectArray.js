@@ -12,7 +12,9 @@ const game1 = {
     Link:"",
     Img:"",
     Dec:"",
-}
+};
+
+var projectArray = [game1]
 //#endregion
 
 var sampleArray = [exampleArrayTest, exampleArrayTest2, exampleArrayTest3];
