@@ -8,20 +8,20 @@ const exampleArrayTest3 = { firstName: "Sik", lastName: "aserv", age: 54 };
 
 //#region Projects
 const game1 = {
-    Name:"",
-    Link:"",
-    Img:"",
-    Dec:"",
+  Name: "Tammys Tamowatches",
+  Link: "https://chaffeycomputerscienceclub.github.io/HTML/newSignup",
+  Img: "#",
+  Dec: "A Small project intended to be a life organizer mixed with game elements. Made with HTML, CSS, and Javascript. It also included database elements using Firebase.",
 };
 
-var projectArray = [game1]
+var projectArray = [game1];
 //#endregion
 
 var sampleArray = [exampleArrayTest, exampleArrayTest2, exampleArrayTest3];
 
-function ProjectArray() {
+function DisplayProjectArray() {
   //prints a amount of stuff based on a array
-  var amount = sampleArray.length;
+  var amount = projectArray.length;
   const container = document.getElementById("ProjectCont");
 
   container.innerHTML = `
@@ -29,7 +29,7 @@ function ProjectArray() {
           <h1>First Name</h1>
           <h1>Last Name</h1>
           <h1>Age</h1>
-          </div>
+        </div>
         `;
 
   for (let i = 0; i < amount; i++) {
@@ -46,4 +46,4 @@ function ProjectArray() {
     container.appendChild(iD3);
   }
 }
-arrayTest();
+DisplayProjectArray();
