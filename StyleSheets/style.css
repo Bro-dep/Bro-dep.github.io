@@ -128,7 +128,6 @@ main {
   border: 1px solid var(--color5);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 500px;
 
   position: relative;
   top: 0px;
@@ -158,6 +157,8 @@ a {
 }
 .grid {
   display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
   justify-items: center;
 }
 .center{
@@ -240,5 +241,11 @@ row::after{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    gap: 20px;
+    justify-items: center;
+  }
 }
 /*#endregion*/
