@@ -14,14 +14,24 @@ const game1 = {
   Dec: "A Small project intended to be a life organizer mixed with game elements. Made with HTML, CSS, and Javascript. It also included database elements using Firebase.",
 };
 
-var projectArray = [game1, game1, game1];
+async function getProjects() {
+  try {
+  const response = await fetch("../JS/json/projects.json");
+  const projectArray = await response.json();
+  DisplayProjectArray(projectArray);
+}
+catch (error) {
+  console.error('Error Loading Products: ', error);
+}
+}
+//var projectArray = [game1, game1, game1];
 //#endregion
 
 var sampleArray = [exampleArrayTest, exampleArrayTest2, exampleArrayTest3];
 
-function DisplayProjectArray() {
+function DisplayProjectArray(projectArray) {
   //prints a amount of stuff based on a array
-  var amount = projectArray.length;
+  //var amount = projectArray.length;
 
   const container = document.getElementById("ProjectCont");
   //container.innerHTML = 
@@ -40,27 +50,27 @@ function DisplayProjectArray() {
           </a>
         `;
 
-  for (let i = 0; i < amount; i++) {
+  projectArray.forEach((project) => {
     //Link box
     const linkCont = document.createElement("a");
-    linkCont.href = projectArray[i].Link;
+    linkCont.href = project.Link;
     linkCont.className = "cardProject";
     //Img
     const img = document.createElement("img");
-    img.src = projectArray[i].Img;
+    img.src = project.Img;
     img.className = "center";
     //H2
     const h2 = document.createElement("h2");
-    h2.innerHTML = projectArray[i].Name;
+    h2.innerHTML = project.Name;
     //P
     const p = document.createElement("p");
-    p.innerHTML = projectArray[i].Dec;
+    p.innerHTML = project.Dec;
     //Appending
     linkCont.appendChild(img);
     linkCont.appendChild(h2);
     linkCont.appendChild(p);
     //Appending
     container.appendChild(linkCont);
-  }
+  });
 }
-DisplayProjectArray();
+
