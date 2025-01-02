@@ -31,11 +31,35 @@ async function getProjects() {
       linkCont.appendChild(p);
       //Appending
       container.appendChild(linkCont);
+
+      linkCont.onclick = () => expandProject(project);
     });
   } catch (error) {
     console.error("Error Loading Products: ", error);
   }
 }
+
+//Clicking on a project
+function expandProject(project) {
+  console.log(project.Name);
+
+  //Expand element
+  const linkCont = document.getElementById(project.Name);
+  if (linkCont.classList.contains("gridSpan")) {
+    //return to normal
+    linkCont.classList.remove("gridSpan");
+  }
+  else {
+    //expand
+    linkCont.classList.add("gridSpan")
+    //Adding new content
+    
+  }
+
+
+}
+
+
 //run on load
 getProjects();
 
