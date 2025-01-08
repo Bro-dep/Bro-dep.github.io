@@ -15,6 +15,8 @@ async function getProjects() {
       linkCont.className = "cardProject";
       //Used for buttons
       linkCont.id = project.Name;
+      //Link
+      linkCont.href = project.Link;
       //Img
       const img = document.createElement("img");
       img.src = project.Img;
@@ -51,9 +53,8 @@ function expandProject(project) {
   }
   else {
     //expand
-    linkCont.classList.add("gridSpan")
+    //linkCont.classList.add("gridSpan")
     //Adding new content
-    
   }
 
 

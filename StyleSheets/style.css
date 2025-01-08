@@ -58,6 +58,11 @@ main {
 .descriptionSmall{
   font-size: 1rem;
 }
+nav {
+  padding-top: 1rem;
+  position: sticky;
+  top: 0;
+}
 /*#endregion*/
 
 /*#region Cards*/
@@ -128,6 +133,7 @@ main {
   border: 1px solid var(--color5);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  
 
   position: relative;
   top: 0px;
@@ -168,10 +174,7 @@ a {
   width: 100%;
 }
 .gridExpand{
-  display: grid;
-  grid-template-columns: auto, auto;
-  gap: 20px;
-  justify-items: center;
+  display: float;
 }
 .center{
   display: block; 
@@ -237,8 +240,27 @@ row::after{
   float: left;
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
-
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 100%;  
+    gap: 20px;
+    justify-items: center;
+  }
 }
 @media only screen and (min-width: 768px) {
   .col-1 {width: 8.33%;}
@@ -256,7 +278,7 @@ row::after{
   .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: auto;  
+    grid-template-rows: 100%;  
     gap: 20px;
     justify-items: center;
   }

@@ -1,2 +1,3 @@
 Currently working on remaking the website to be updated to current skills along with redesigning the websites look/layout.
 Beginning to work on the projects page/dynamic array of projects.
+Dynamic array of projects is done and made compatible with json files. Still need to load in all my projects into the file though.
