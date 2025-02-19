@@ -1,14 +1,24 @@
+// document.getElementById('ProjectCont').addEventListener(()=>{
+//   getProjects();
+// })
+
+//#region getProjects()
 //Copy's a template to allow a dynamic amount of elements
-async function getProjects() {
+async function getProjects(id,amount) {
   try {
     const response = await fetch("../JS/json/projects.json");
     const projectArray = await response.json();
     console.log("projectArray");
-    const container = document.getElementById("ProjectCont");
+    const container = document.getElementById(id);
     projectArray.forEach((project) => {
       //Math to center remaining links
-      const amount = projectArray.length;
-      console.log(amount);
+      if(amount == undefined){
+        const amount = projectArray.length;
+        console.log(amount);
+      }
+      else{
+        console.log(amount)
+      }
       //Link box
       const linkCont = document.createElement("a");
       //linkCont.href = project.Link;
@@ -41,6 +51,8 @@ async function getProjects() {
   }
 }
 
+
+//#region Extra junk
 //Clicking on a project
 function expandProject(project) {
   console.log(project.Name);
@@ -56,12 +68,10 @@ function expandProject(project) {
     //linkCont.classList.add("gridSpan")
     //Adding new content
   }
-
-
 }
-
+//#endregion
 
 //run on load
-getProjects();
+getProjects('ProjectCont',1);
 
 
