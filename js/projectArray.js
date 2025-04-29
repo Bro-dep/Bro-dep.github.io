@@ -18,6 +18,11 @@ async function getProjects(id,amount) {
       }
       else{
         console.log(amount)
+        amount = amount - 1;
+        if(amount == 0){
+          //stop loop;
+          return;
+        }
       }
       //Link box
       const linkCont = document.createElement("a");
@@ -30,7 +35,8 @@ async function getProjects(id,amount) {
       //Img
       const img = document.createElement("img");
       img.src = project.Img;
-      img.className = "center";
+      img.className = "center ";
+      //img.className +=  project.Shape;
       //H2
       const h2 = document.createElement("h2");
       h2.innerHTML = project.Name;
@@ -47,7 +53,7 @@ async function getProjects(id,amount) {
       linkCont.onclick = () => expandProject(project);
     });
   } catch (error) {
-    console.error("Error Loading Products: ", error);
+    console.error("Error Loading items: ", error);
   }
 }
 
@@ -72,6 +78,7 @@ function expandProject(project) {
 //#endregion
 
 //run on load
-getProjects('ProjectCont',1);
-
+getProjects('ProjectCont');
+getProjects('ProjectContFeature',3);
+getProjects('ProjectContShort',6);
 

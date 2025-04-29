@@ -1,20 +1,30 @@
 [
   {
+    "Name": "Iris's Candy Shop",
+    "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
+    "Img": "../Images/IrisCandyShop.png",
+    "Shape": "rectangle",
+    "Dec": "A Game Developed for a club game jam themed around halloween."
+  },
+  {
     "Name": "Tammys Tamowatches",
     "Link": "https://chaffeycomputerscienceclub.github.io/HTML/newSignup",
     "Img": "../Images/TammysTamoWatches.png",
+    "Shape": "square",
     "Dec": "A Small project intended to be a life organizer mixed with game elements. Made with HTML, CSS, and Javascript. It also included database elements using Firebase."
   },
   {
     "Name": "Dr Radiant",
     "Link": "https://chaffeygamedev.itch.io/dr-radiant",
     "Img": "../Images/DrRadient.png",
+    "Shape": "rectangle",
     "Dec": "Play as a Doctor helping out their patients"
   },
   {
     "Name": "Kowboy kitty",
     "Link": "https://chaffeygamedev.itch.io/kowboy-kitty",
-    "Img": "../Images/TammysTamoWatches.png",
+    "Img": "../Images/KowboyKitty.png",
+    "Shape": "rectangle",
     "Dec": "Our entry for the Global Game Jam 2024."
   }
 ]

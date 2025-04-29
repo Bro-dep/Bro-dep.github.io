@@ -28,11 +28,28 @@ main {
   color: var(--color5);
   padding: 2rem 2rem;
 }
+nav {
+  z-index: 1;
+}
 .flexMain{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.footerStyle{
+  background-color: var(--color3);
+  color: var(--color5);
+  padding: 2rem 2rem;
+}
+.highlight{
+  color: var(--color5);
+}
+.highlight:hover,
+.highlight:focus,
+.highlight:active{
+  color: var(--color1);
+  border-color: var(--color1);
 }
 /*#endregion*/
 
@@ -165,8 +182,8 @@ a {
 .grid {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto;
-  gap: 20px;
+  /* grid-template-rows: auto; */
+  /* gap: 20px; */
   justify-items: center;
 }
 .gridSpan{
@@ -181,6 +198,20 @@ a {
   margin-left: auto; 
   margin-right: auto; 
   width: 70%;
+}
+.square{
+  width: 50%;
+  height: 50%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle{
+  width: 100%;
+  height: 50%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
 }
 /*#endregion*/
 
@@ -257,8 +288,8 @@ row::after{
   .grid {
     display: grid;
     grid-template-columns: 50% 50%; 
-    grid-template-rows: 100%;  
-    gap: 20px;
+    /* grid-template-rows: 100%;  
+    gap: 20px; */
     justify-items: center;
   }
 }
@@ -278,8 +309,8 @@ row::after{
   .grid {
     display: grid;
     grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: 100%;  
-    gap: 20px;
+    /* grid-template-rows: 100%;  
+    gap: 20px; */
     justify-items: center;
   }
 }
