@@ -6,7 +6,7 @@
 //Copy's a template to allow a dynamic amount of elements
 async function getProjects(id,amount) {
   try {
-    const response = await fetch("../JS/json/projects.json");
+    const response = await fetch("/main/JS/json/projects.json");
     var projectArray = await response.json();
     console.log("projectArray");
     const container = document.getElementById(id);
