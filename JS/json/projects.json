@@ -26,5 +26,12 @@
     "Img": "../Images/KowboyKitty.png",
     "Shape": "rectangle",
     "Dec": "Our entry for the Global Game Jam 2024."
+  },
+  {
+    "Name": "Bouncy Bob",
+    "Link": "https://brodep.itch.io/bouncybob",
+    "Img": "../Images/bouncyBob.png",
+    "Shape": "rectangle",
+    "Dec": "A small project for a class. Bouncy Bob is a game where you have to help bob get home."
   }
 ]

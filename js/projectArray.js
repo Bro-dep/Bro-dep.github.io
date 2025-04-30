@@ -7,23 +7,20 @@
 async function getProjects(id,amount) {
   try {
     const response = await fetch("../JS/json/projects.json");
-    const projectArray = await response.json();
+    var projectArray = await response.json();
     console.log("projectArray");
     const container = document.getElementById(id);
+    //Math to center remaining links
+    if(amount == undefined){
+      const amount = projectArray.length;
+      console.log(amount);
+    }
+    else{
+      console.log(amount)
+      projectArray = projectArray.slice(0,amount);
+      console.log(projectArray);
+    }
     projectArray.forEach((project) => {
-      //Math to center remaining links
-      if(amount == undefined){
-        const amount = projectArray.length;
-        console.log(amount);
-      }
-      else{
-        console.log(amount)
-        amount = amount - 1;
-        if(amount == 0){
-          //stop loop;
-          return;
-        }
-      }
       //Link box
       const linkCont = document.createElement("a");
       //linkCont.href = project.Link;
@@ -80,5 +77,4 @@ function expandProject(project) {
 //run on load
 getProjects('ProjectCont');
 getProjects('ProjectContFeature',3);
-getProjects('ProjectContShort',6);
 
