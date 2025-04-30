@@ -1,5 +1,12 @@
 [
   {
+    "Name": "Bubble Bowl",
+    "Link": "https://chaffeygamedev.itch.io/bubble-bowl",
+    "Img": "../Images/BuybbleBowlTitle.jpeg",
+    "Shape": "rectangle",
+    "Dec": "Fight it out with your friends and be the one to win the Bubble Bowl!"
+  },
+  {
     "Name": "Iris's Candy Shop",
     "Link": "https://chaffeygamedev.itch.io/iriss-candy-shop",
     "Img": "../Images/IrisCandyShop.png",
